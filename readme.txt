@@ -3,9 +3,9 @@ Contributors: coffee2code
 Donate link: http://coffee2code.com/donate
 Tags: categories, category, list, the_category, coffee2code
 Requires at least: 2.5
-Tested up to: 3.1
-Stable tag: 1.1.1
-Version: 1.1.1
+Tested up to: 3.2
+Stable tag: 1.1.2
+Version: 1.1.2
 
 Like the_category(), list categories assigned to a post, but excluding assigned categories that have a child category also assigned to the post.
 
@@ -55,7 +55,7 @@ Outputs something like:
 
 `<a href="http://yourblog.com/category/fruiting/cucumber">Cucumber</a>, <a href="http://yourblog.com/category/fruiting/pumpkin">Pumpkin</a>`
 
-Links: [Plugin Homepage]:(http://coffee2code.com/wp-plugins/parentless-categories/) | [Author Homepage]:(http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/parentless-categories/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
@@ -103,6 +103,11 @@ Optional argument. (int) Post ID.  If 'false', then the current post is assumed.
 
 == Changelog ==
 
+= 1.1.2 =
+* Note compatibility through WP 3.2+
+* Minor documentation reformatting in readme.txt
+* Fix plugin homepage and author links in description in readme.txt
+
 = 1.1.1 =
 * Documentation tweaks
 * Note compatibility with WP 3.1+
@@ -124,6 +129,9 @@ Optional argument. (int) Post ID.  If 'false', then the current post is assumed.
 
 
 == Upgrade Notice ==
+
+= 1.1.2 =
+Trivial update: noted compatibility through WP 3.2+
 
 = 1.1.1 =
 Trivial update: documentation tweaks; noted compatibility with WP 3.1+ and updated copyright date.

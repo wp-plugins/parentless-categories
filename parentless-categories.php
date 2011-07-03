@@ -2,21 +2,26 @@
 /**
  * @package Parentless_Categories
  * @author Scott Reilly
- * @version 1.1.1
+ * @version 1.1.2
  */
 /*
 Plugin Name: Parentless Categories
-Version: 1.1.1
+Version: 1.1.2
 Plugin URI: http://coffee2code.com/wp-plugins/parentless-categories/
 Author: Scott Reilly
 Author URI: http://coffee2code.com
 Description: Like the_category(), list categories assigned to a post, but excluding assigned categories that have a child category also assigned to the post.
 
-Compatible with WordPress 2.5+, 2.6+, 2.7+, 2.8+, 2.9+, 3.0+, 3.1+.
+Compatible with WordPress 2.5+, 2.6+, 2.7+, 2.8+, 2.9+, 3.0+, 3.1+, 3.2+.
 
 =>> Read the accompanying readme.txt file for instructions and documentation.
 =>> Also, visit the plugin's homepage for additional information and updates.
 =>> Or visit: http://wordpress.org/extend/plugins/parentless-categories/
+
+TODO:
+	* Prefix function wit 'c2c_' and deprecate existing versions
+	* Support filter invocation approach via add_filter( 'parentless_categories', 'parentless_categories', 10, 2 );
+	* Document previously mentioned filters
 
 */
 
@@ -37,7 +42,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
 
-if ( !function_exists( 'parentless_categories' ) ) :
+if ( ! function_exists( 'parentless_categories' ) ) :
 /**
  * Outputs the parentless categories.
  *
@@ -53,7 +58,7 @@ function parentless_categories( $separator = '', $post_id = false ) {
 endif;
 
 
-if ( !function_exists( 'get_parentless_categories_list' ) ) :
+if ( ! function_exists( 'get_parentless_categories_list' ) ) :
 /**
  * Gets the list of parentless categories.
  *
@@ -91,7 +96,7 @@ function get_parentless_categories_list( $separator = '', $post_id = false ) {
 endif;
 
 
-if ( !function_exists( 'get_parentless_categories' ) ) :
+if ( ! function_exists( 'get_parentless_categories' ) ) :
 /**
  * Returns the list of parentless categories for the specified post. IF not supplied a
  * post ID, then an empty array is returned.
