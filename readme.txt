@@ -2,10 +2,12 @@
 Contributors: coffee2code
 Donate link: http://coffee2code.com/donate
 Tags: categories, category, list, the_category, coffee2code
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.5
-Tested up to: 3.3
-Stable tag: 1.1.3
-Version: 1.1.3
+Tested up to: 3.4
+Stable tag: 1.1.4
+Version: 1.1.4
 
 Like the_category(), list categories assigned to a post, but excluding assigned categories that have a child category also assigned to the post.
 
@@ -103,6 +105,12 @@ Optional argument. (int) Post ID.  If 'false', then the current post is assumed.
 
 == Changelog ==
 
+= 1.1.4 =
+* Re-license as GPLv2 or later (from X11)
+* Add 'License' and 'License URI' header tags to readme.txt and plugin file
+* Remove ending PHP close tag
+* Note compatibility through WP 3.4+
+
 = 1.1.3 =
 * Note compatibility through WP 3.3+
 * Add link to plugin directory page to readme.txt
@@ -134,6 +142,12 @@ Optional argument. (int) Post ID.  If 'false', then the current post is assumed.
 
 
 == Upgrade Notice ==
+
+= 1.1.4 =
+Trivial update: noted compatibility through WP 3.4+; explicitly stated license
+
+= 1.1.3 =
+Trivial update: noted compatibility through WP 3.3+
 
 = 1.1.2 =
 Trivial update: noted compatibility through WP 3.2+
