@@ -1,25 +1,24 @@
 <?php
 /**
+ * Plugin Name: Parentless Categories
+ * Version:     2.0.1
+ * Plugin URI:  http://coffee2code.com/wp-plugins/parentless-categories/
+ * Author:      Scott Reilly
+ * Author URI:  http://coffee2code.com/
+ * License:     GPLv2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Description: List a post's categories that don't have a parent category also directly assigned to the post (basically lists all leaf nodes).
+ *
+ * Compatible with WordPress 3.6 through 4.0+.
+ *
+ * =>> Read the accompanying readme.txt file for instructions and documentation.
+ * =>> Also, visit the plugin's homepage for additional information and updates.
+ * =>> Or visit: https://wordpress.org/plugins/parentless-categories/
+ *
  * @package Parentless_Categories
  * @author Scott Reilly
- * @version 2.0
+ * @version 2.0.1
  */
-/*
-Plugin Name: Parentless Categories
-Version: 2.0
-Plugin URI: http://coffee2code.com/wp-plugins/parentless-categories/
-Author: Scott Reilly
-Author URI: http://coffee2code.com/
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Description: List a post's categories that don't have a parent category also directly assigned to the post (basically lists all leaf nodes).
-
-Compatible with WordPress 3.6 through 3.8+.
-
-=>> Read the accompanying readme.txt file for instructions and documentation.
-=>> Also, visit the plugin's homepage for additional information and updates.
-=>> Or visit: http://wordpress.org/plugins/parentless-categories/
-*/
 
 /*
 	Copyright (c) 2008-2014 by Scott Reilly (aka coffee2code)
@@ -39,6 +38,7 @@ Compatible with WordPress 3.6 through 3.8+.
 	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+defined( 'ABSPATH' ) or die();
 
 if ( ! function_exists( 'c2c_parentless_categories' ) ) :
 

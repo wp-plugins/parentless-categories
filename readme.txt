@@ -5,8 +5,8 @@ Tags: categories, category, list, the_category, coffee2code
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 3.6
-Tested up to: 3.8
-Stable tag: 2.0
+Tested up to: 4.0
+Stable tag: 2.0.1
 
 Like the_category(), list categories assigned to a post, but excluding assigned categories that have a child category also assigned to the post.
 
@@ -54,7 +54,7 @@ Outputs something like:
 
 `<a href="http://yourblog.com/category/fruiting/cucumber">Cucumber</a>, <a href="http://yourblog.com/category/fruiting/pumpkin">Pumpkin</a>`
 
-Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/parentless-categories/) | [Plugin Directory Page](http://wordpress.org/plugins/parentless-categories/) | [Author Homepage](http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/parentless-categories/) | [Plugin Directory Page](https://wordpress.org/plugins/parentless-categories/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
@@ -176,6 +176,13 @@ add_filter( 'c2c_get_parentless_categories_omit_ancestors', '__return_false' );
 
 == Changelog ==
 
+= 2.0.1 (2014-08-30) =
+* Minor plugin header reformatting
+* Add check to prevent execution of code if file is directly accessed
+* Change documentation links to wp.org to be https
+* Note compatibility through WP 4.0+
+* Add plugin icon
+
 = 2.0 (2014-01-09) =
 * Add c2c_parentless_categories()
 * Deprecate parentless_categories() in favor of c2c_parentless_categories()
@@ -243,6 +250,9 @@ add_filter( 'c2c_get_parentless_categories_omit_ancestors', '__return_false' );
 
 
 == Upgrade Notice ==
+
+= 2.0.1 =
+Trivial update: noted compatibility through WP 4.0+; added plugin icon.
 
 = 2.0 =
 Major update: deprecated all existing functions and filters in favor of 'c2c_' prepended versions; added unit tests; noted compatibility is now only for WP 3.6-3.8+
