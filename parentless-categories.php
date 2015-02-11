@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Parentless Categories
- * Version:     2.0.1
+ * Version:     2.0.2
  * Plugin URI:  http://coffee2code.com/wp-plugins/parentless-categories/
  * Author:      Scott Reilly
  * Author URI:  http://coffee2code.com/
@@ -9,7 +9,7 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Description: List a post's categories that don't have a parent category also directly assigned to the post (basically lists all leaf nodes).
  *
- * Compatible with WordPress 3.6 through 4.0+.
+ * Compatible with WordPress 3.6 through 4.1+.
  *
  * =>> Read the accompanying readme.txt file for instructions and documentation.
  * =>> Also, visit the plugin's homepage for additional information and updates.
@@ -17,11 +17,11 @@
  *
  * @package Parentless_Categories
  * @author Scott Reilly
- * @version 2.0.1
+ * @version 2.0.2
  */
 
 /*
-	Copyright (c) 2008-2014 by Scott Reilly (aka coffee2code)
+	Copyright (c) 2008-2015 by Scott Reilly (aka coffee2code)
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
